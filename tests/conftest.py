@@ -2,7 +2,7 @@ import pytest
 from core.driver_manager import WebDriverManager
 
 
-@pytest.fixture(scope="class")
+@pytest.fixture(scope="function")
 def open_browser(request, browser_name):
     driver_manger = WebDriverManager(browser_name)
     driver = driver_manger.get_driver()

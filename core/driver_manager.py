@@ -1,6 +1,7 @@
 from selenium import webdriver
 from core.browsers_enum import Browser
 
+
 class WebDriverManager:
 
     def __init__(self, browser_name=None):
